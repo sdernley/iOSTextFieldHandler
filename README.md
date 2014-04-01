@@ -23,13 +23,14 @@ Add padding to your TextFields by adding your TextFields to an array and passing
     [iOSTextFieldHandler TextPaddingMultiple: textArray];
 ```
 
-Want to stop TextFields and buttons being hidden behind the keyboard? Easy, just add this in your ViewController and make sure all of your TextFields have delegate set to self. You can see how to do this in the example code.
+Want to stop TextFields and buttons being hidden behind the keyboard? Easy, just add this in your ViewController with the name of your scrollView and your submit button. You can see how to do this in the example code.
 ```objective-c
     - (void)textFieldDidBeginEditing:(UITextField *)textField
     {
         [iOSTextFieldHandler TextboxKeyboardMover:containingScrollView tf:textField btn:btnSubmit];
     }
 ```
+Make sure all of your TextFields have delegate set to self.
 
 ##More coming soon
 I'm going to add some new features in soon so keep checking back.
