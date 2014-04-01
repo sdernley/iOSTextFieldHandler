@@ -7,11 +7,11 @@ Copy iOSTextFieldHandler.h & iOSTextFieldHandler.m into your project to use.
 
 Example project with files in is included to show usage examples but some quick examples are below.
 
-##Before
+##Keyboard positioning before
 ![Before](http://scottdidit.co.uk/before.jpg)
 Keyboard covers TextFields and submit button stopping the user from submitting the form.
 
-##After
+##Keyboard positioning after
 ![After](http://scottdidit.co.uk/after.jpg)
 Anything that falls below the keyboard is moved up so the user can see it.
 
