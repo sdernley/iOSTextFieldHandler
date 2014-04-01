@@ -1,7 +1,7 @@
 iOSTextFieldHandler
 ===================
 
-Handle UITextFields in iOS. Unhide TextFields and submit buttons from behind keyboard when using a ScrollView. Add inner padding to UITextField elements. Generally, just make your forms more usuable.
+Handle UITextFields in iOS. Unhide TextFields and submit buttons from behind keyboard when using a ScrollView. Add inner padding to TextField elements. Generally, just make your forms more usuable.
 
 Copy iOSTextFieldHandler.h & iOSTextFieldHandler.m into your project to use.
 
