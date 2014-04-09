@@ -15,4 +15,6 @@
 +(void)TextPaddingSingle:(UITextField *)textField;
 +(void)TextPaddingMultiple:(NSArray *)textArray;
 +(void)TextboxKeyboardMover:(UIScrollView *)containingScrollView tf:(UITextField *)textField btn:(UIButton *)button;
++(void)KeyboardResigner:(UIScrollView *)containingScrollView;
++(void)closeKeyboard:(UIGestureRecognizer *)gestureRecognizer;
 @end

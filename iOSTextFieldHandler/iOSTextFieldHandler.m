@@ -18,11 +18,11 @@
 
 +(void)TextPaddingSingle:(UITextField *)textField
 {
-   //IF YOU JUST WANT TO ADD PADDING TO AN INDIVIDUAL UITEXTFIELD - ADDS 10 PADDING
-       
-        UIView *spacerView = [[UIView alloc] initWithFrame:CGRectMake(10, 0, 10, 10)];
-        [textField setLeftViewMode:UITextFieldViewModeAlways];
-        [textField setLeftView:spacerView];
+    //IF YOU JUST WANT TO ADD PADDING TO AN INDIVIDUAL UITEXTFIELD - ADDS 10 PADDING
+    
+    UIView *spacerView = [[UIView alloc] initWithFrame:CGRectMake(10, 0, 10, 10)];
+    [textField setLeftViewMode:UITextFieldViewModeAlways];
+    [textField setLeftView:spacerView];
 }
 
 
@@ -66,6 +66,25 @@
         //MOVE IT SO IT ISN'T BELOW KEYBOARD
         [containingScrollView setContentOffset:CGPointMake(0, moveObjectBy + buttonAllowance) animated:TRUE];
     }
+}
+
++(void)KeyboardResigner:(UIScrollView *)containingScrollView
+{
+    UITapGestureRecognizer *tapScrollView = [[UITapGestureRecognizer alloc]initWithTarget:self  action:@selector(closeKeyboard:)];
+    
+    tapScrollView.cancelsTouchesInView = NO;
+    [containingScrollView addGestureRecognizer:tapScrollView];
+}
+
++(void)closeKeyboard:(UIGestureRecognizer *)gestureRecognizer
+{
+    //USED BY KeyboardResigner.
+    UIScrollView *containingScrollView = (UIScrollView*) gestureRecognizer.view;
+    
+    [containingScrollView setContentOffset:CGPointMake(0, 0) animated:TRUE];
+    [containingScrollView endEditing:YES];
+    
+    
 }
 
 @end

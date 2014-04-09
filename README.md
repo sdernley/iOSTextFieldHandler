@@ -30,6 +30,12 @@ Want to stop TextFields and buttons being hidden behind the keyboard? Easy, just
     [iOSTextFieldHandler TextboxKeyboardMover:containingScrollView tf:textField btn:btnSubmit];
 }
 ```
+
+To close / resign the keyboard when the `ScrollView` is tapped, you just need to add this to your `viewDidLoad`:
+
+```objective-c
+[iOSTextFieldHandler KeyboardResigner: containingScrollView];
+```
 Make sure all of your TextFields have delegate set to self.
 
 ##More coming soon

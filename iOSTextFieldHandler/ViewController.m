@@ -37,11 +37,15 @@
     txtPassword.delegate = self;
     txtEmail.delegate = self;
     
+    //CLOSE KEYBOARD AND RETURN SCROLLVIEW TO ORIGINAL POSITION (IF MOVED) WHEN SCROLLVIEW IS TAPPED
+    [iOSTextFieldHandler KeyboardResigner: containingScrollView];
     
     //YOU DON'T NEED TO DO THIS, I JUST WANTED WHITE BORDERED UITEXTFIELDS FOR THE EXAMPLE
     [self setBorders];
     
 }
+
+
 
 //KEYBOARD MOVEMENT
 - (void)textFieldDidBeginEditing:(UITextField *)textField
