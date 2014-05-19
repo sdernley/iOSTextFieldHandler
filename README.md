@@ -38,5 +38,5 @@ To close / resign the keyboard when the `ScrollView` is tapped, you just need to
 ```
 Make sure all of your TextFields have delegate set to self.
 
-##More coming soon
-I'm going to add some new features in soon so keep checking back.
+##Thanks
+Thanks for getting this far. You don't have to, but if you use iOSTextFieldHandler I'd love hear about it. You can tweet me at http://twitter.com/sdernley.
